@@ -6,6 +6,6 @@
     <title>About page</title>
 </head>
 <body>
-    Hi, it's ABOUT page
+    Hi, it's ABOUT PAGE
 </body>
 </html>
