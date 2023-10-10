@@ -40,7 +40,7 @@ Route::get('/Welcome', [About::class, 'WelcomeToLarvelTest']);
 
 
 # The parameter id here is not required.
-Route::get('/GETname/{name?}', function(?String $name="OUMAIMA")
+Route::get('/GETname/{name?}', function(String $name="OUMAIMA")
 {
     return $name;
 }); 
@@ -51,3 +51,12 @@ Route::get('/GETname/{name?}', function(?String $name="OUMAIMA")
 Route::get('/oum', [About::class, 'index']); 
 
 
+
+
+# View without the Get , passing data as array and using it in the corresponding view
+Route::View('/about-me','oumaAbou',[
+    'page_title'=>'About Me',
+    'page_description'=>'This is the description part ',
+    'page_h1'=>'Hi , Welcome to About ME page'
+
+]);
